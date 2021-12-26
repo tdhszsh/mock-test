@@ -6,6 +6,7 @@
         </div>
         <div class="index-bottom">
             <div class="index-left">
+                <nav-bar></nav-bar>
             </div>
             <div class="index-right">
                 <div class="index-right-top">
@@ -69,10 +70,11 @@
     }
 </style>
 <script>
+import navBar from './navBar/index.vue';
 export default {
     name: 'index',
     components: {
-
+        navBar
     },
     data() {
         return {

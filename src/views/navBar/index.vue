@@ -5,8 +5,10 @@
                 <template slot="title">
                     <span>{{ nav.title }}</span>
                 </template>
-                <el-menu-item-group :title="">
-                    <el-menu-item :index="">{{}}</el-menu-item>
+                <el-menu-item-group>
+                    <el-menu-item v-for="(insideNav, key) in nav.insideNav" :key="key" :index="insideNav.index">
+                        {{ insideNav.title }}
+                    </el-menu-item>
                 </el-menu-item-group>
             </el-submenu>
         </el-menu>
