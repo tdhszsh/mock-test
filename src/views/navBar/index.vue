@@ -1,0 +1,22 @@
+<template>
+    <div class="nav-bar-view">
+        <el-menu>
+            <el-submenu v-for="(nav, key) in navBarList" :key="key" :index="nav.index">
+                <template slot="title">
+                    <span>{{ nav.title }}</span>
+                </template>
+                <el-menu-item-group :title="">
+                    <el-menu-item :index="">{{}}</el-menu-item>
+                </el-menu-item-group>
+            </el-submenu>
+        </el-menu>
+    </div>
+</template>
+<style scoped lang="scss">
+    .nav-bar-view {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<script src="./index.js">
+</script>
