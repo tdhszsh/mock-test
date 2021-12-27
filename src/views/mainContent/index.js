@@ -1,6 +1,7 @@
 import goodsDetail from '@/components/goodsDetail.vue';
 export default {
     name: 'mainContent',
+    
     components: {
         goodsDetail
     },
