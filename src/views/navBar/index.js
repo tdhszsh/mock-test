@@ -7,24 +7,50 @@ export default {
         return {
             navBarList: [
                 {
-                    title: 'iphone系列',
-                    index: '1',
+                    title: 'Apple Store',
+                    index: '/storeIndex',
                     insideNav: [
                         {
-                            title: 'iphoneX',
-                            index: '1-1',
+                            title: 'Mac',
+                            index: '/mac',
                         },
                         {
-                            title: 'iphone11',
-                            index: '1-2',
+                            title: 'iPad',
+                            index: '/ipad',
                         },
                         {
-                            title: 'iphone12',
-                            index: '1-3',
+                            title: 'iPhone',
+                            index: '/iphone',
                         },
                         {
-                            title: 'iphoneSE',
-                            index: '1-4',
+                            title: 'AirPods',
+                            index: '/airPods',
+                        },
+                        {
+                            title: 'Watch',
+                            index: '/watch',
+                        },
+                    ]
+                },
+                {
+                    title: 'ipad系列',
+                    index: '3',
+                    insideNav: [
+                        {
+                            title: 'ipad2019',
+                            index: '3-1',
+                        },
+                        {
+                            title: 'ipad2020',
+                            index: '3-2',
+                        },
+                        {
+                            title: 'ipad2021',
+                            index: '3-3',
+                        },
+                        {
+                            title: 'ipad2022',
+                            index: '3-4',
                         },
                     ]
                 }

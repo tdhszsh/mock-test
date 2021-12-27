@@ -12,6 +12,7 @@
                 <div class="index-right-top">
                 </div>
                 <div class="index-right-bottom">
+                    <router-view/>
                 </div>
             </div>
         </div>
@@ -45,6 +46,7 @@
             width: 100%;
             flex: 1;
             display: flex;
+            overflow: hidden;
             .index-left {
                 width: 15%;
                 height: 100%;
@@ -62,8 +64,10 @@
                 }
                 .index-right-bottom {
                     width: 100%;
+                    height: 100%;
                     flex: 1;
-                    background: #6fd783;
+                    // background: #6fd783;
+                    background: #ffffff;
                 }
             }
         }
@@ -71,10 +75,12 @@
 </style>
 <script>
 import navBar from './navBar/index.vue';
+import mainContent from './mainContent/index.vue';
 export default {
     name: 'index',
     components: {
-        navBar
+        navBar,
+        mainContent
     },
     data() {
         return {

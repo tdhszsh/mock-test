@@ -1,6 +1,9 @@
 <template>
     <div class="nav-bar-view">
-        <el-menu>
+        <el-menu unique-opened router>
+            <el-menu-item index="navIndex">
+                <span slot="title">首页</span>
+            </el-menu-item>
             <el-submenu v-for="(nav, key) in navBarList" :key="key" :index="nav.index">
                 <template slot="title">
                     <span>{{ nav.title }}</span>
@@ -18,6 +21,13 @@
     .nav-bar-view {
         width: 100%;
         height: 100%;
+        .el-menu {
+            .el-menu-item, .el-submenu {
+                span {
+
+                }
+            }
+        }
     }
 </style>
 <script src="./index.js">
