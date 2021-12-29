@@ -28,6 +28,11 @@ export default new Router({
           name: 'goodsSaleParent',
           component: () => import('./components/goodsSaleParent.vue')
         },
+        {
+          path: '/storeStock/stock',
+          name: 'stock',
+          component: () => import('./views/goodsStock/index.vue')
+        }
       ]
     },
   ]

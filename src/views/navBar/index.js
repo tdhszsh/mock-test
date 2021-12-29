@@ -8,7 +8,7 @@ export default {
             navBarList: [
                 {
                     title: 'Apple Store',
-                    index: '/storeIndex',
+                    index: '/goods',
                     insideNav: [
                         {
                             title: 'Mac',
@@ -33,24 +33,12 @@ export default {
                     ]
                 },
                 {
-                    title: 'ipad系列',
-                    index: '3',
+                    title: 'goodsStock',
+                    index: '/storeStock',
                     insideNav: [
                         {
-                            title: 'ipad2019',
-                            index: '3-1',
-                        },
-                        {
-                            title: 'ipad2020',
-                            index: '3-2',
-                        },
-                        {
-                            title: 'ipad2021',
-                            index: '3-3',
-                        },
-                        {
-                            title: 'ipad2022',
-                            index: '3-4',
+                            title: '库存表格',
+                            index: '/storeStock/stock',
                         },
                     ]
                 }
