@@ -64,10 +64,11 @@
                 }
                 .index-right-bottom {
                     width: 100%;
-                    height: 100%;
+                    // height: 100%;
                     flex: 1;
                     // background: #6fd783;
                     background: #ffffff;
+                    overflow: hidden;
                 }
             }
         }

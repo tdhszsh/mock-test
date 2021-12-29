@@ -27,30 +27,35 @@ export default new Router({
           component: () => import('./views/mainContent/index.vue')
         },
         {
-          path: '/mac',
+          path: '/goods/:id',
           name: 'mainContent',
           component: () => import('./views/mainContent/index.vue')
         },
-        {
-          path: '/ipad',
-          name: 'mainContent',
-          component: () => import('./views/mainContent/index.vue')
-        },
-        {
-          path: '/iphone',
-          name: 'mainContent',
-          component: () => import('./views/mainContent/index.vue')
-        },
-        {
-          path: '/airPods',
-          name: 'mainContent',
-          component: () => import('./views/mainContent/index.vue')
-        },
-        {
-          path: '/watch',
-          name: 'mainContent',
-          component: () => import('./views/mainContent/index.vue')
-        },
+        // {
+        //   path: '/mac',
+        //   name: 'mainContent',
+        //   component: () => import('./views/mainContent/index.vue')
+        // },
+        // {
+        //   path: '/ipad',
+        //   name: 'mainContent',
+        //   component: () => import('./views/mainContent/index.vue')
+        // },
+        // {
+        //   path: '/iphone',
+        //   name: 'mainContent',
+        //   component: () => import('./views/mainContent/index.vue')
+        // },
+        // {
+        //   path: '/airPods',
+        //   name: 'mainContent',
+        //   component: () => import('./views/mainContent/index.vue')
+        // },
+        // {
+        //   path: '/watch',
+        //   name: 'mainContent',
+        //   component: () => import('./views/mainContent/index.vue')
+        // },
       ]
     },
   ]

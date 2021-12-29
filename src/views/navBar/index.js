@@ -12,23 +12,23 @@ export default {
                     insideNav: [
                         {
                             title: 'Mac',
-                            index: '/mac',
+                            index: '/goods/mac',
                         },
                         {
                             title: 'iPad',
-                            index: '/ipad',
+                            index: '/goods/ipad',
                         },
                         {
                             title: 'iPhone',
-                            index: '/iphone',
+                            index: '/goods/iphone',
                         },
                         {
                             title: 'AirPods',
-                            index: '/airPods',
+                            index: '/goods/airPods',
                         },
                         {
                             title: 'Watch',
-                            index: '/watch',
+                            index: '/goods/watch',
                         },
                     ]
                 },
