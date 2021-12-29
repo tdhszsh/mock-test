@@ -18,7 +18,7 @@
         <div class="number-price">
             <template>
                 <el-input-number v-model="goodsNum" size="mini"
-                    :min="0" :max="10" :label="选购数量" class="total-number">
+                    :min="0" :max="10" label="选购数量" class="total-number">
                 </el-input-number>
             </template>
             <span class="total-price">总价：￥{{ totalPrice }}</span>
@@ -44,6 +44,8 @@
         .goods-img-div {
             width: 100px;
             height: 100px;
+            margin: 10px 0;
+            padding: 10px;
             .goods-img {
                 width: 100%;
                 height: 100%;

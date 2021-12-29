@@ -1,7 +1,7 @@
 <template>
     <div class="index-view">
         <div class="index-top">
-            <img class="logo" src="../assets/logo.png">
+            <img class="logo" src="../assets/logo2.png">
             <h1 class="system-title">Welcome to Apple Store</h1>
         </div>
         <div class="index-bottom">
@@ -76,12 +76,12 @@
 </style>
 <script>
 import navBar from './navBar/index.vue';
-import mainContent from './mainContent/index.vue';
+import goodsSale from './goodsSale/index.vue';
 export default {
     name: 'index',
     components: {
         navBar,
-        mainContent
+        goodsSale
     },
     data() {
         return {

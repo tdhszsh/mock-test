@@ -1,7 +1,9 @@
 <template>
     <div class="nav-bar-view">
-        <el-menu unique-opened router>
-            <el-menu-item index="navIndex">
+        <el-menu 
+            unique-opened 
+            router>
+            <el-menu-item index="/navIndex">
                 <span slot="title">首页</span>
             </el-menu-item>
             <el-submenu v-for="(nav, key) in navBarList" :key="key" :index="nav.index">

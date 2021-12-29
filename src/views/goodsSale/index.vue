@@ -1,5 +1,5 @@
 <template>
-    <div class="main-content-view">
+    <div class="goods-sale-view">
         <div class="goods-search">
             <el-input placeholder="请输入搜索内容" prefix-icon="el-icon-search" v-model="searchKey"></el-input>
         </div>
@@ -12,12 +12,13 @@
             </div>
         </div>
         <div class="goods-pagination">
+            <!-- current-page为什么要加sync，而total不用？ -->
             <el-pagination
                 background
                 layout="prev, pager, next"
-                :current-page="currentPage"
+                :current-page.sync="currentPage"
                 :page-size="pageSize"
-                :total="this.goodsList.length"
+                :total.sync="this.goodsList.length"
                 @current-change="currentChange"
                 @prev-click="prevClick"
                 @next-click="nextClick">
@@ -26,10 +27,10 @@
     </div>
 </template>
 <style scoped lang="scss">
-    .main-content-view ::-webkit-scrollbar {
+    .goods-sale-view ::-webkit-scrollbar {
         display: none;
     }
-    .main-content-view {
+    .goods-sale-view {
         width: 100%;
         height: 100%;
         padding: 20px;
@@ -48,7 +49,7 @@
             margin-top: 20px;
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-content: flex-start;
             overflow: auto;
             .goods-detail {
