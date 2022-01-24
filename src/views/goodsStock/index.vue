@@ -22,9 +22,14 @@
             title="属性编辑" 
             :visible.sync="editModalShow"
             :close-on-click-modal="false"
-            destroy-on-close
+            :destroy-on-close="true"
             class="edit-modal">
-            <goods-edit></goods-edit>
+            <goods-edit
+                :goodsInfo.sync="goodsInfo"
+                @modify-goods-attr="modifyGoodsAttr"
+                v-if="editModalShow"
+            ></goods-edit>
+            <!-- 如果不用v-if清除缓存，打开时商品id就会是上一次的 -->
         </el-dialog>
     </div>
 </template>
