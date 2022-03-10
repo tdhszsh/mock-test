@@ -83,22 +83,17 @@ export default {
   },
   methods: {
     loginHandle() {
-        // Mock.mock('http://localhost:8080/test/loginData', {
-        //   "loginResponse|1":[{
-        //     "status": 200,
-        //     "statusText": 'OK',
-        //     "result": [
-        //       {
-        //         "exist": true,
-        //         "name": '胡万三'
-        //       }
-        //     ]
-        //   }]
+        // this.$router.push('/index');
+        axios.get('/../src/assets/test.json', {}, (res) => {
+          console.log("33查看测试配置", res);
+        })
+// let url = 'http://localhost:8099/src/assets/test.json';
+// axios.get(url, {}, (res) => {
+//   console.log("33查看测试配置", res);
+// })
+        // axios.get('/test.json', {}, (res) => {
+        //   console.log("33查看测试配置", res);
         // })
-        // axios.get('/test/loginData', 'aaa', (res) => {
-        //     console.log("1111异步请求返回的模拟数据为",res);
-        // });
-        this.$router.push('/index');
     },
     resetInput() {
       this.loginData = {

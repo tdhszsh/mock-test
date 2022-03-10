@@ -6,10 +6,10 @@ export default {
     data() {
         return {
             navBarList: [
-                {
+                { // 一级路由
                     title: 'Apple Store',
                     index: '/goods',
-                    insideNav: [
+                    insideNav: [ // 二级路由
                         {
                             title: 'Mac',
                             index: '/goods/mac',

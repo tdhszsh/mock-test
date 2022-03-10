@@ -1,6 +1,7 @@
 <template>
     <div class="index-page-view">
         导航首页内容
+        <global-component></global-component>
     </div>
 </template>
 <style scoped lang="scss">
