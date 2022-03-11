@@ -85,7 +85,7 @@ export default {
   },
   methods: {
     loginHandle() {
-        // this.$router.push('/index');
+        this.$router.push('/index');
         // axios.get('/test.json', {}, (res) => {
         //   console.log("33查看测试配置", res);
         // })
@@ -93,10 +93,14 @@ export default {
         // axios.get(url, {}, (res) => {
         //   console.log("33查看测试配置", res);
         // })
-        getCJLB2().then(res => {
-          console.log("33查看res", res);
-        })
-        this.f1(8);
+
+        // getCJLB2().then(res => {
+        //   console.log("33查看res", res);
+        // }).catch(error => {
+        //   console.log("33查看失败原因", error);
+        // })
+        
+        // this.f1(3);
     },
     resetInput() {
       this.loginData = {
