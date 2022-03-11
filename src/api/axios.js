@@ -6,11 +6,11 @@ let require = axios.create({
     headers: {
         'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8'
     },
-    transformResponse: [function (response) {
-        if (response.hasOwnProperty('result')) {
-            return response.result;
-        }
-    }]
+    // transformResponse: [function (response) {
+    //     if (response.hasOwnProperty('result')) {
+    //         return response.result;
+    //     }
+    // }]
 });
 
 function apiAxios(method, url, params, response) {

@@ -61,6 +61,8 @@
 // const Mock = require('mockjs');
 import Mock from 'mockjs';
 import axios from '@/api/axios.js';
+import { getCJLB } from '../service/keda.js';
+import { getCJLB2 } from '../service/keda2.js';
 export default {
   name: 'login',
   data() {
@@ -84,22 +86,34 @@ export default {
   methods: {
     loginHandle() {
         // this.$router.push('/index');
-        axios.get('/../src/assets/test.json', {}, (res) => {
-          console.log("33查看测试配置", res);
-        })
-// let url = 'http://localhost:8099/src/assets/test.json';
-// axios.get(url, {}, (res) => {
-//   console.log("33查看测试配置", res);
-// })
         // axios.get('/test.json', {}, (res) => {
         //   console.log("33查看测试配置", res);
         // })
+        // let url = 'http://localhost:8099/src/assets/test.json';
+        // axios.get(url, {}, (res) => {
+        //   console.log("33查看测试配置", res);
+        // })
+        getCJLB2().then(res => {
+          console.log("33查看res", res);
+        })
+        this.f1(8);
     },
     resetInput() {
       this.loginData = {
         name: '',
         password: ''
       };
+    },
+    // resolve方法
+    f1(num) {
+      return new Promise((resolve, reject) => {
+        if(num > 5) resolve(`num=${num}，执行resolve方法, promise对象的状态被置为已完成`);
+        else reject(`num=${num}，执行reject方法，promise对象的状态被置为失败`);
+      }).then(res => {
+        console.log(res);
+      }).catch(error => {
+        console.log(error);
+      })
     }
   },
   mounted() {}
